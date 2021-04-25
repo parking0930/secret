@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 switch (item.getItemId()) {
-                    case R.id.navigation_menu1: {
+                    case R.id.navigation_home: {
                         transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
                         break;
                     }
