@@ -2,15 +2,25 @@ package com.inhatc.secret;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ImageView ivMenu;
+    private DrawerLayout drawerLayout;
+    private Toolbar toolbar;
+    private ImageView profileImg;
+
     // FrameLayout에 각 메뉴의 Fragment를 바꿔 줌
     private FragmentManager fragmentManager = getSupportFragmentManager();
     // 4개의 메뉴에 들어갈 Fragment들
@@ -19,6 +29,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ivMenu=findViewById(R.id.iv_menu);
+        drawerLayout=findViewById(R.id.drawer_main);
+        toolbar=findViewById(R.id.toolbar);
+
+        ivMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(Gravity.LEFT);
+            }
+        });
+        //액션바 변경하기(들어갈 수 있는 타입 : Toolbar type
+        setSupportActionBar(toolbar);
+
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         // 첫 화면 지정
         FragmentTransaction transaction = fragmentManager.beginTransaction();
