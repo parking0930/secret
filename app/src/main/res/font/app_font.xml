@@ -21,5 +21,30 @@
         app:fontStyle="normal"
         app:fontWeight="500" />
 
+    <!--regular-->
+    <font
+        android:font="@font/gyunggi_light"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        app:font="@font/gyunggi_light"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
 
+    <!--medium-->
+    <font
+        android:font="@font/gyunggi_medium"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        app:font="@font/gyunggi_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+
+    <!--bold-->
+    <font
+        android:font="@font/gyunggi_bold"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        app:font="@font/gyunggi_bold"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
 </font-family>

@@ -7,78 +7,160 @@
     tools:context=".LoginActivity">
 
     <View
-        android:id="@+id/view"
-        android:layout_width="347dp"
+        android:id="@+id/loginView"
+        android:layout_width="0dp"
         android:layout_height="240dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/ic_ractangle"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="299dp"
-        android:layout_height="55dp"
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/gyunggi_bold"
         android:text="로그인"
-        android:fontFamily="@font/notokr_medium"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="316dp" />
+        android:textColor="#2196F3"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginView"
+        app:layout_constraintVertical_bias="0.691" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="292dp"
+        android:hint="아이디"
+        android:layout_width="0dp"
         android:layout_height="40dp"
-        android:ems="10"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="59dp"
         android:background="@drawable/ic_edittext_design"
+        android:ems="10"
+        android:fontFamily="@font/notokr_medium"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="212dp" />
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginView" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="293dp"
-        android:layout_height="42dp"
-        android:ems="10"
+        android:hint="비밀번호"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="59dp"
         android:background="@drawable/ic_edittext_design"
+        android:ems="10"
+        android:fontFamily="@font/notokr_medium"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="262dp" />
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="261dp"
-        android:layout_height="51dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="442dp" />
+        android:layout_width="256dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginView"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/notokr_bold"
-        android:text="LOGIN"
-        android:textSize="40dp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/gyunggi_bold"
+        android:gravity="center"
+        android:text="EverSecret"
+        android:textColor="#2196F3"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/notokr_medium"
+        android:fontFamily="@font/notokr_bold"
         android:text="회원가입"
+        android:textColor="@color/black"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="383dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/loginView"
+        app:layout_constraintEnd_toEndOf="@+id/loginView"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="@+id/loginView"
+        app:layout_constraintTop_toTopOf="@+id/loginView"
+        app:layout_constraintVertical_bias="0.899" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/notokr_medium"
+        android:fontFamily="@font/notokr_bold"
         android:text="아이디/비밀번호 찾기"
+        android:textColor="@color/black"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="383dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/loginView"
+        app:layout_constraintEnd_toEndOf="@+id/loginView"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/loginView"
+        app:layout_constraintTop_toTopOf="@+id/loginView"
+        app:layout_constraintVertical_bias="0.899" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gyunggi_bold"
+        android:text="초·중·고 학생들의 익명 커뮤니티"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyunggi_bold"
+        android:text="에버시크릿에 오신 것을 환영합니다."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.058" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
