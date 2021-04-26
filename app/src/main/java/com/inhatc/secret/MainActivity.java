@@ -34,6 +34,18 @@ public class MainActivity extends AppCompatActivity {
                         transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
                         break;
                     }
+                    case R.id.navigation_community: {
+                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        break;
+                    }
+                    case R.id.navigation_calendar: {
+                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        break;
+                    }
+                    case R.id.navigation_setting: {
+                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        break;
+                    }
                 }
 
                 return true;
