@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragment2"
+        android:paddingBottom="70dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="Community"
+            android:textColor="#2196F3"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="자유롭게 소통할 수 있는 커뮤니티 입니다."
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <View
+            android:id="@+id/boardView1"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_mainview_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/txtBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="커뮤니티"
+            android:textColor="#2196F3"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/boardView1"
+            app:layout_constraintStart_toStartOf="@+id/boardView1"
+            app:layout_constraintTop_toTopOf="@+id/boardView1"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <View
+            android:id="@+id/boardView2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_mainview_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boardView1" />
+
+        <TextView
+            android:id="@+id/txtRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="학교별 활동 랭킹"
+            android:textColor="#2196F3"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/boardView2"
+            app:layout_constraintStart_toStartOf="@+id/boardView2"
+            app:layout_constraintTop_toTopOf="@+id/boardView2"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <TextView
+            android:id="@+id/txtFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="자유게시판"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/boardView1"
+            app:layout_constraintTop_toTopOf="@+id/boardView1" />
+
+        <TextView
+            android:id="@+id/txtAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="홍보게시판"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/boardView1"
+            app:layout_constraintTop_toBottomOf="@+id/txtFree" />
+
+        <TextView
+            android:id="@+id/txtSecondhand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="중고 거래"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/boardView1"
+            app:layout_constraintTop_toBottomOf="@+id/txtAd" />
+
+        <TextView
+            android:id="@+id/txtFreeInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/gyunggi_medium"
+            android:text="게시글이 존재하지 않습니다."
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtFree"
+            app:layout_constraintTop_toTopOf="@+id/boardView1" />
+
+        <TextView
+            android:id="@+id/txtAdInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/gyunggi_medium"
+            android:text="게시글이 존재하지 않습니다."
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtAd"
+            app:layout_constraintTop_toBottomOf="@+id/txtFreeInner" />
+
+        <TextView
+            android:id="@+id/txtSecondhandInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/gyunggi_medium"
+            android:text="게시글이 존재하지 않습니다."
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/txtSecondhand"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdInner" />
+
+        <ImageView
+            android:id="@+id/imgGold"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gold"
+            app:layout_constraintStart_toStartOf="@+id/boardView2"
+            app:layout_constraintTop_toBottomOf="@+id/txtRanking" />
+
+        <ImageView
+            android:id="@+id/imgSilver"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/silver"
+            app:layout_constraintStart_toStartOf="@+id/boardView2"
+            app:layout_constraintTop_toBottomOf="@+id/imgGold" />
+
+        <ImageView
+            android:id="@+id/imgBronze"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/brown"
+            app:layout_constraintStart_toStartOf="@+id/boardView2"
+            app:layout_constraintTop_toBottomOf="@+id/imgSilver" />
+
+        <TextView
+            android:id="@+id/txtGoldSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="OO고등학교"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/imgGold"
+            app:layout_constraintTop_toBottomOf="@+id/txtRanking" />
+
+        <TextView
+            android:id="@+id/txtSilverSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="OO중학교"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/imgSilver"
+            app:layout_constraintTop_toBottomOf="@+id/txtGoldSchool" />
+
+        <TextView
+            android:id="@+id/txtBronzeSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/gyunggi_bold"
+            android:text="OO중학교"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/imgBronze"
+            app:layout_constraintTop_toBottomOf="@+id/txtSilverSchool" />
+
+        <TextView
+            android:id="@+id/txtLunchMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gyunggi_medium"
+            android:text="더 보기>"
+            android:textColor="#676767"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/boardView2"
+            app:layout_constraintEnd_toEndOf="@+id/boardView2"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="@+id/boardView2"
+            app:layout_constraintTop_toTopOf="@+id/boardView2"
+            app:layout_constraintVertical_bias="0.08" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

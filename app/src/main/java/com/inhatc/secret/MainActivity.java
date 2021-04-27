@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
     // 4개의 메뉴에 들어갈 Fragment들
     private Fragment1 menu1 = new Fragment1();
+    private Fragment2 menu2 = new Fragment2();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,15 +63,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.navigation_community: {
-                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame_layout, menu2).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_calendar: {
-                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame_layout, menu2).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_setting: {
-                        transaction.replace(R.id.frame_layout, menu1).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame_layout, menu2).commitAllowingStateLoss();
                         break;
                     }
                 }
