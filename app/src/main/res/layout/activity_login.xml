@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtId"
         android:hint="아이디"
         android:layout_width="0dp"
         android:layout_height="40dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="@+id/loginView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtPw"
         android:hint="비밀번호"
         android:layout_width="0dp"
         android:layout_height="40dp"
@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtId" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
 
-    <Button
+    <TextView
         android:id="@+id/signupBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
