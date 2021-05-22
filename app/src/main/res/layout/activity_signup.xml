@@ -10,22 +10,21 @@
         android:id="@+id/Logo"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/gyunggi_bold"
         android:gravity="center"
         android:text="EverSecret"
         android:textColor="#2196F3"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/SignUpAge"
+        android:id="@+id/edtAge"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
@@ -34,16 +33,15 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpSchool"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSchool" />
 
     <EditText
-        android:id="@+id/SignUpPwd"
+        android:id="@+id/edtSignUpPwd"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
@@ -52,16 +50,15 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpId"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSignUpId" />
 
     <EditText
-        android:id="@+id/SignUpPwdChk"
+        android:id="@+id/edtSignUpPwdChk"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
@@ -70,51 +67,46 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpPwd"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSignUpPwd" />
 
     <EditText
-        android:id="@+id/SignUpName"
+        android:id="@+id/edtNickname"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
-        android:hint="이름"
+        android:hint="닉네임"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpPwdChk"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSignUpPwdChk" />
 
     <Button
         android:id="@+id/SignUpBtn"
         android:layout_width="302dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_btn_login"
         android:fontFamily="@font/gyunggi_bold"
         android:text="회원가입"
         android:textColor="@color/white"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpAge"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edtAge" />
 
     <EditText
-        android:id="@+id/SignUpId"
+        android:id="@+id/edtSignUpId"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
@@ -123,17 +115,15 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
     <EditText
-        android:id="@+id/SignUpSchool"
+        android:id="@+id/edtSchool"
         android:layout_width="293dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
@@ -142,9 +132,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpName"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNickname" />
 </androidx.constraintlayout.widget.ConstraintLayout>

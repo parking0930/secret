@@ -11,7 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Secret">
+        android:theme="@style/Theme.Secret"
+        android:usesCleartextTraffic="true">
         <activity android:name=".Signup"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
