@@ -28,7 +28,7 @@
         android:background="@drawable/ic_edittext_design"
         android:ems="10"
         android:fontFamily="@font/notokr_medium"
-        android:hint="나이"
+        android:hint="생일"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"

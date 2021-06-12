@@ -60,6 +60,7 @@ public class Signup extends AppCompatActivity {
                     System.out.println("받음:"+result.get("result"));
                     if(result.get("result").equals("1")){
                         Toast.makeText(Signup.this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                        finish();
                     }else{ // 가입 실패 시
                         Toast.makeText(Signup.this, "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
                     }

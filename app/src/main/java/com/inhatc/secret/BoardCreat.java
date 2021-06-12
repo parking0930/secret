@@ -1,22 +1,17 @@
 package com.inhatc.secret;
 
 import android.os.AsyncTask;
-import android.widget.Toast;
 
-import com.google.gson.Gson;
-
-import java.util.HashMap;
 import java.util.Map;
 
-public class MemberInsert extends AsyncTask<Map<String, String>, Integer, String> {
+public class BoardCreat extends AsyncTask<Map<String, String>, Integer, String> {
 
     @Override
     protected String doInBackground(Map<String, String>... maps) {
         IP_and_Port ipAndPort = new IP_and_Port();
         String ip = ipAndPort.getIp();
         String port = ipAndPort.getPort();
-        HttpClient.Builder http = new HttpClient.Builder("POST", "http://" + ip + ":" + port + "/secret/joinMember");
-
+        HttpClient.Builder http = new HttpClient.Builder("POST", "http://" + ip + ":" + port + "/secret/board_create");
         http.addAllParameters(maps[0]);
 
         HttpClient post = http.create();
@@ -28,10 +23,5 @@ public class MemberInsert extends AsyncTask<Map<String, String>, Integer, String
         String body = post.getBody();
 
         return body; // return 되면 아래의 onPostExecute의 인수로 넘어감
-    }
-
-    @Override
-    protected void onPostExecute(String data) { // 받은 결과 출력
-
     }
 }

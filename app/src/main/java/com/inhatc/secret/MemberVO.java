@@ -1,14 +1,12 @@
 package com.inhatc.secret;
 
-import java.util.Date;
-
 public class MemberVO {
     private String id;
     private String pw;
     private String nickname;
     private String school;
-    private Date birth;
-    private Date date;
+    private String birth;
+    private String date;
     public String getId() {
         return id;
     }
@@ -33,16 +31,16 @@ public class MemberVO {
     public void setSchool(String school) {
         this.school = school;
     }
-    public Date getBirth() {
+    public String getBirth() {
         return birth;
     }
-    public void setBirth(Date birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
     @Override
@@ -50,4 +48,5 @@ public class MemberVO {
         return "MemberVO [id=" + id + ", pw=" + pw + ", nickname=" + nickname + ", school=" + school + ", birth="
                 + birth + ", date=" + date + "]";
     }
+
 }
